@@ -1,0 +1,36 @@
+package com.example.myapplication;
+
+import java.util.Date;
+
+public abstract class Pet {
+    String name;
+    Date birthDate;
+
+    public Pet(String name, Date birthDate) {
+        this.name = name;
+        this.birthDate = birthDate;
+    }
+
+    public Pet(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public abstract String speak();
+
+}
